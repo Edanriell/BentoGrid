@@ -1,4 +1,5 @@
 <script>
+	import {HomePage} from "@pages/home/ui";
 </script>
 
 <svelte:head>
@@ -6,9 +7,4 @@
 	<meta content="Svelte demo app" name="description" />
 </svelte:head>
 
-<section>
-	<h1>Main Page</h1>
-</section>
-
-<style>
-</style>
+<HomePage />
