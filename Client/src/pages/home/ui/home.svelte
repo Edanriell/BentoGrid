@@ -17,7 +17,8 @@
 			</li>
 			<li class="benefits-list-1__accounts-card-item accounts-card-item">
 				<div class="accounts-card-item__image-group">
-					<img alt="Instagram and X badge" class="accounts-card-item__badges" src="images/raster/badges.webp">
+					<img alt="Instagram badge" class="accounts-card-item__instagram-badge" src="images/vector/instagram-badge.svg">
+					<img alt="X badge" class="accounts-card-item__x-badge" src="images/vector/x-badge.svg">
 				</div>
 				<h3 class="accounts-card-item__title">Manage multiple accounts and platforms.</h3>
 			</li>
@@ -148,6 +149,7 @@
 		border-radius: 10px;
 		padding: 16px;
 		background: var(--color-white);
+		overflow: hidden;
 	}
 
 	.accounts-card-item__image-group {
@@ -156,11 +158,16 @@
 		justify-content: center;
 	}
 
-	.accounts-card-item__badges {
-		width: 316.08rem;
-		height: 66.54rem;
-		user-select: none;
-		pointer-events: none;
+	.accounts-card-item__instagram-badge {
+		margin-top: -12rem;
+		margin-left: -6rem;
+		margin-bottom: -36rem;
+	}
+
+	.accounts-card-item__x-badge {
+		margin-left: -36rem;
+		margin-top: -12rem;
+		margin-bottom: -40rem;
 	}
 
 	.accounts-card-item__title {
