@@ -1,9 +1,11 @@
-<script></script>
+<script>
+	import {Link} from "@shared/ui/link"
+</script>
 
 <section class="not-found-section">
 	<h1 class="not-found-section__title">404</h1>
 	<p class="not-found-section__text">Sorry, the page you are looking for does not exist.</p>
-	<a href="/">Go Back to Home</a>
+	<Link />
 </section>
 
 <style>
@@ -45,5 +47,6 @@
 		letter-spacing: -0.04em;
 		color: var(--color-black);
 		text-align: center;
+		margin-bottom: 20rem;
 	}
 </style>
