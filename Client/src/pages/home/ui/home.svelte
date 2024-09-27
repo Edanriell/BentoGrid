@@ -1,4 +1,6 @@
-<script></script>
+<script>
+	const stars = 5;
+</script>
 
 <section class="ai-benefits-section">
 	<h1 class="visually-hidden">AI Benefits</h1>
@@ -7,11 +9,9 @@
 			<li class="benefits-list-1__reviews-card-item reviews-card-item">
 				<h2 class="reviews-card-item__title">Social Media <strong>10x</strong> <em>Faster</em> with AI</h2>
 				<div class="reviews-card-item__image-group">
-					<img alt="Star" class="reviews-card-item__image" src="images/vector/star.svg">
-					<img alt="Star" class="reviews-card-item__image" src="images/vector/star.svg">
-					<img alt="Star"  class="reviews-card-item__image" src="images/vector/star.svg">
-					<img alt="Star" class="reviews-card-item__image" src="images/vector/star.svg">
-					<img alt="Star" class="reviews-card-item__image" src="images/vector/star.svg">
+					{#each Array(stars) as _}
+						<img alt="Star" class="reviews-card-item__image" src="images/vector/star.svg">
+					{/each}
 				</div>
 				<p class="reviews-card-item__text">Over 4,000 5-star reviews</p>
 			</li>
@@ -82,7 +82,7 @@
 		row-gap: 32rem;
 
 		@media (width >= 1440px) {
-			grid-template-columns: 1fr 3fr;
+			grid-template-columns: repeat(4, 1fr);
 			column-gap: 32rem;
 		}
 	}
@@ -92,7 +92,7 @@
 		grid-row: 1 / 2;
 
 		@media (width >= 1440px) {
-			grid-column: 2 / 3;
+			grid-column: 2 / -1;
 			grid-row: 1 / -1;
 		}
 	}
@@ -760,7 +760,7 @@
 
 		@media (width >= 1440px) {
 			display: block;
-			margin-right: -32rem;
+			margin-right: -26rem;
 			margin-bottom: -29rem;
 		}
 	}
